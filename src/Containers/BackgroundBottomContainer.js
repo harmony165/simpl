@@ -11,25 +11,27 @@ import { Box } from '@mui/material';
 
 const BackgroundBottomContainer = () => {
     return (
-            <Box style={{ backgroundColor: "#E5E5E5", display: "flex", height: "61vh", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", overflowY: "scroll" }}>
-       
+        <Box style={{ backgroundColor: "#E5E5E5", display: "flex", height: "80vh", flexDirection: "column", alignItems: "center", justifyContent: "flex-start", overflowY: "scroll" }}>
 
-              <div style={{width:"100%", display:"flex",flexDirection:"column",alignItems:"center",justifyContent: "center",backgroundColor: "#E5E5E5", height: "100%" }}>
-                <div style={{minHeight:"300px"}}>
+
+                <div style={{ minHeight: "340px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", backgroundColor: "#E5E5E5" }}>
 
                 </div>
+
                 <MerchantsContainer />
-            </div>
 
-                <PaymentBackdropContainer />
+                
+         
 
-
-
-
+            <PaymentBackdropContainer />
 
 
 
-            </Box>
+
+
+
+
+        </Box>
     )
 }
 

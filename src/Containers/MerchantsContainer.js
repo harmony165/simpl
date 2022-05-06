@@ -15,13 +15,13 @@ import zomato from "../assets/images/zomato.png";
 
 const MerchantsContainer = () => {
     return (
-        <Box mb="50px" pb="2vh" sx={{
+        <Box pb="20px" sx={{
             display:"flex",flexDirection:"column",
             backgroundColor: "white", filter: "dropShadow(0px 1px 28px rgba(0, 4, 18, 0.04))"
             , width: "90%", maxWidth: "800px", borderRadius: "12px"
         }}>
 
-            <Typography py="1vh" px="25px" sx={{ textAlign: "left", fontSize: "1.5vh" }} color="#A8AFB8" gutterBottom>
+            <Typography py="14px" px="25px" sx={{ textAlign: "left", fontSize: "12px" }} color="#A8AFB8" gutterBottom>
                 Use Simpl on 4500+ merchants
             </Typography>
 

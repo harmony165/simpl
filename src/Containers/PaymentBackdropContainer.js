@@ -33,22 +33,22 @@ const PaymentBackdropContainer = () => {
     return (
 
         <Box sx={{ backgroundColor: "white", filter: "dropShadow(0px 1px 28px rgba(0, 4, 18, 0.04))", width: "90%", maxWidth: "800px", borderRadius: "12px", position:"absolute", top:"100px", zIndex:"2" }}>
-            <Box px="25px" py="2.5vh"  >
-                <Box pb="2vh" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", borderBottom: " 1px dashed #CCCCCC" }}>
-                    <Typography sx={{ fontSize: "2vh" }} color="#888888" gutterBottom>
+            <Box py="20px" px="25px"  >
+                <Box pb="16px" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", borderBottom: " 1px dashed #CCCCCC" }}>
+                    <Typography sx={{ fontSize: 16 }} color="#888888" gutterBottom>
                         Amount due
                     </Typography>
                     <Box style={{ display: "flex", flexDirection: "column", alignItems: "flex-end" }}>
-                        <Typography sx={{ fontSize: "4vh" }} color="#202020">₹26,000</Typography>
-                        <Typography sx={{ fontSize: "1.5vh" }} color="#202020">Due by April 20 </Typography>
+                        <Typography sx={{ fontSize: 36 }} color="#202020">₹26,000</Typography>
+                        <Typography sx={{ fontSize: 12 }} color="#202020">Due by April 20 </Typography>
                     </Box>
                 </Box>
-                <Box py="1.5vh" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", borderBottom: " 1px solid #CCCCCC" }}>
+                <Box py="16px" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", borderBottom: " 1px solid #CCCCCC" }}>
                     <Box style={{ display: "flex", alignItems: "center" }}>
                         <ReceiptLongIcon sx={{ fontSize: "14px", color: "#888888", mr: "3px" }} />
-                        <Typography sx={{ fontSize: "1.7vh" }} color="#888888"> Bill amount</Typography>
+                        <Typography sx={{ fontSize: "14px" }} color="#888888"> Bill amount</Typography>
                     </Box>
-                    <Typography sx={{ fontSize: "1.7vh", }} color="#888888"> ₹41,000</Typography>
+                    <Typography sx={{ fontSize: "14px", }} color="#888888"> ₹41,000</Typography>
                 </Box>
                 <Box >
                     <Transaction success date="April 18" amount="₹5,000" />
@@ -61,12 +61,12 @@ const PaymentBackdropContainer = () => {
                 <Box pt="20px" pb="20px" style={{ width:"100%", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                     <Box className="" style={{ display: "flex", alignItems: "center" , flexDirection:"row"}}>
                         <img alt="icon" src={paytm} style={{ marginRight: "5px" }} />
-                        <Typography sx={{ fontSize: "2.5vh" }} color={"#202020"}>PayTM </Typography>
+                        <Typography sx={{ fontSize: "18px" }} color={"#202020"}>PayTM </Typography>
                     </Box>
-                    <Typography sx={{ fontSize: "1.5vh", fontWeight: "600" }} color="#202020" >Change</Typography>
+                    <Typography sx={{ fontSize: "12px", fontWeight: "600" }} color="#202020" >Change</Typography>
                 </Box>
 
-                <LoadingButton loading={loading} onClick={handleClick} variant="contained" color="primary" sx={{ color: "white", width: "100%", height: "6vh" }}> PAY NOW</LoadingButton>
+                <LoadingButton loading={loading} onClick={handleClick} variant="contained" color="primary" sx={{ color: "white", width: "100%", height: "40px" }}> PAY NOW</LoadingButton>
                 </Box>
           
                 
